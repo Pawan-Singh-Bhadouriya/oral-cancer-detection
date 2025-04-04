@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oral Cancer Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🩺 Oral Cancer Detection</h1>
+      <p>Upload a scan to check for early signs of oral cancer.</p>
+    </header>
+
+    <section class="upload-section">
+      <form id="uploadForm">
+        <input type="file" name="file" id="fileUpload" />
+        <button type="submit" class="btn upload-btn">📤 Upload</button>
+      </form>
+      <img id="previewImage" class="preview-img" style="display: none;" />
+      <p id="uploadStatus" class="status-text"></p>
+    </section>
+
+    <section class="chatbot-section">
+      <h2>Need More Information?</h2>
+      <p>Ask our AI Chatbot about oral health and cancer detection.</p>
+      <a href="/chat" class="btn chatbot-btn">💬 Go to Chatbot</a>
+    </section>
+  </div>
+
+  <div id="toast" class="toast">
+    <span class="toast-icon">✔</span>
+    <span class="toast-message">Image uploaded successfully!</span>
+  </div>
+</body>
+</html>
+
+
+
+<!-- last 4 use kiya ths -->
+
